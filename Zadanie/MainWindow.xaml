@@ -1,0 +1,27 @@
+﻿<Window x:Class="Zadanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="text1" MaxLength="100" Margin="300,76,391,316" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5" />
+        <TextBox x:Name="text2" MaxLength="100" Margin="300,134,390,260" />
+        <TextBox x:Name ="text3" MaxLength="100" Margin="300,197,390,197"/>
+        <Label Content="Bok" Margin="0,69,682,305" FontSize="20" />
+        <Label Content="Pole" Margin="0,134,619,-134" FontSize="20" />
+        <Label Content="Obwód" Margin="0,190,634,-190" FontSize="20" />
+        <Button Content="Wyczyść" Margin="96,344,444,31" RenderTransformOrigin="0.5,0.5" FontSize="20"  Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.33"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>
